@@ -34,8 +34,8 @@ Contents
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	text-decoration: none;
-	text-transform: uppercase;
-	text-rendering: optimizeLegibility;
+/*	text-transform: uppercase;
+*/	text-rendering: optimizeLegibility;
 }
 
 #logo h2, #logoDetailView h2 {
