@@ -67,70 +67,55 @@
 	<!-- Header ends ============================================================================ -->
 	
 	<div id="detailView" class="sixteen columns" >
-		
 		<div id="detailViewImages">
-			<ul class="rslides">
+			<ul class="rslides" id="rslides_container">
 				<li>
 					<a href="http://hp.com/envy"><img src="images/hp-envy-large-1.jpg" alt="HP Envy - Image 01" /></a>
-					<p><strong>Landing Page (w/ jQuery slider)</strong></p>
-					<hr />
 				</li>
 				<li>
 					<a href="http://hp.com/envy"><img src="images/hp-envy-large-2.jpg" alt="HP Envy - Image 02" /></a>
-					<p><strong>Overview Page (Media portal)</strong></p>
-					<hr />
 				</li>
 				<li>
 					<a href="http://hp.com/envy"><img src="images/hp-envy-large-3.jpg" alt="HP Envy - Image 02" /></a>
-					<p><strong>Overview Page (Media portal)</strong></p>
-					<hr />
 				</li>
 			</ul>
 		</div>
-		
-		<div id="detailViewBack">
-			<a href="../../index.html">&laquo; Back</a>
-		</div>
-		
 	</div>
-	
+	<div class="expandedProjectInfo">
+		<h4>HP Envy</h4>
+		<div class="projectNavCounter"></div>
+		<div class="projectNav">
+			<div class="projectNavEnlarge"><button class="enlargeButton" onClick="window.location.href='projects/hp-envy/index.html'">Expand</button></div>
+			<div class="projectNavClose"><button class="closeButton">Close</button></div>
+			<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
+		</div>
+		<p>
+			Microsite for HP's Envy line of notebooks; built using HTML5, CSS, Javascript, jQuery, Coffeescript & Docpad.
+		</p>
+		<p><strong><a href="http://hp.com/envy" target="_blank">http://hp.com/envy</a></strong></p>
+		<ul>
+			<li><strong>Agency: </strong><a href="http://designkitchen.com" target="_blank">Designkitchen</a></li>
+			<li><strong>Client: </strong><a href="http://hp.com" target="_blank">HP</a></li>
+			<li><strong>Role: </strong>Lead Developer</li>
+			<li><strong>Year: </strong>2012</li>
+		</ul>
+	</div>
+		
+	<div id="detailViewBack">
+		<a href="../../index.html">&laquo; Back</a>
+	</div>
+
 	<!-- Footer begins ========================================================================== -->
 	<footer class="sixteen columns">
 		<hr />
 		<ul id="footerLinks">
-			<li>&copy; 2013 Ivan Designostrom. All rights reserved.</li>
-			<li><a href="mailto:hello@ivandesignostrom.com">hello@ivandesignostrom.com</a></li>
-			<li><a href="http://www.twitter.com" target="_blank">Twitter</a></li>
-			<!--Notice: The "Powered by Type & Grids" link in the footer is required in the Free version. Upgrade to the Pro version if you would like to remove it. (www.typeandgrids.com/pirates) -->
-			<li>Powered by <a href="http://www.typeandgrids.com" target="_blank">Type &amp; Grids</a></li>
+			<li>&copy; 2013 Brendon Kuleck. All rights reserved.</li>
+			<li></li>
+			<!-- Notice: The "Powered by Type & Grids" link in the footer is required in the Free version. Upgrade to the Pro version if you would like to remove it. (www.typeandgrids.com/pirates)
+			<li>Powered by <a href="http://www.typeandgrids.com" target="_blank">Type &amp; Grids</a></li> -->
 		</ul>
 	</footer>
 	<!-- Footer ends ============================================================================ -->
-	
 </div><!-- container -->
-<script type="text/javascript">
-
-$(".rslides").responsiveSlides({
-	auto: true,             // Boolean: Animate automatically, true or false
-	speed: 1750,            // Integer: Speed of the transition, in milliseconds
-	timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
-	pager: false,           // Boolean: Show pager, true or false
-	nav: false,             // Boolean: Show navigation, true or false
-	random: false,          // Boolean: Randomize the order of the slides, true or false
-	pause: false,           // Boolean: Pause on hover, true or false
-	pauseControls: true,    // Boolean: Pause when hovering controls, true or false
-	prevText: "Previous | ",   // String: Text for the "previous" button
-	nextText: "Next",       // String: Text for the "next" button
-	maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
-	navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
-	manualControls: "",     // Selector: Declare custom pager navigation
-	namespace: "rslides",   // String: Change the default namespace used
-	before: function(){},   // Function: Before callback
-	after: function(){}     // Function: After callback
-});
-$(function() {
-	$(".rslides").responsiveSlides();
-});
-</script>
 </body>
 </html>

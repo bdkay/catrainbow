@@ -1221,8 +1221,8 @@ p, .projectInfo p, .projectInfo li {
 }
 
 #detailView img {
-	padding-bottom: 12px;
-}
+/*	padding-bottom: 12px;
+*/}
 
 #detailViewImages {
 	text-align: center;

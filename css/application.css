@@ -5,13 +5,12 @@
   list-style: none;
   overflow: hidden;
   width: 100%;
-  padding: 0;
   margin: 0;
   box-shadow: 0 0 20px #000;
   -moz-box-shadow: 0 0 20px #000;
   -webkit-box-shadow: 0 0 20px #000;
-  margin: 0 auto 40px;
   }
+
 
 .rslides li {
   -webkit-backface-visibility: hidden;
@@ -20,6 +19,7 @@
   width: 100%;
   left: 0;
   top: 0;
+  margin-bottom:0;
   }
 
 .rslides li:first-child {
@@ -33,5 +33,96 @@
   height: auto;
   float: left;
   width: 100%;
-  border: 0;
   }
+
+.expandedProjectInfo {
+  float:left;
+  overflow: hidden;
+}
+
+.expandedProjectInfo h4 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+    font-style: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  text-rendering: auto;
+  color: #444;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+  float: left;
+}
+
+.expandedProjectInfo, .linedList {
+  border-bottom: 3px solid #ddd;
+}
+
+.expandedProjectInfo p:nth-of-type(1) {
+  margin-top: 9px;
+}
+
+.expandedProjectInfo p:nth-last-child(2) {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+p strong, .expandedProjectInfo strong {
+  color: #444;
+}
+
+p, .expandedProjectInfo p, .expandedProjectInfo li {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+    font-style: normal;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: 0;
+  text-rendering: auto;
+}
+
+.expandedProjectInfo ul {
+  margin-top: -8px;
+  margin-bottom: 7px;
+}
+
+.expandedProjectInfo p + ul {
+  margin-top: -20px;
+}
+
+.expandedProjectInfo li, .linedList li {
+  border-top: 1px solid #ddd;
+  margin-top: 6px;
+  margin-bottom: -1px;
+  padding-top: 6px;
+  padding-bottom: 0px;
+}
+
+.expandedProjectInfo li:first-child {
+  border-top: none;
+}
+
+.expandedProjectInfo li:last-child {
+  margin-bottom: -2px;
+}
+
+#socialIcons ul {
+}
+
+#socialIcons li {
+  font-weight: bold;
+  font-size: 12px;
+  display: inline;
+  padding-left: 1px;
+  margin-left: 0;
+  padding-right: 1px;
+}
+
+#socialIcons li:first-child {
+  padding-left: 0;
+}
+
+#socialIcons li:last-child {
+  border-right: none;
+}
